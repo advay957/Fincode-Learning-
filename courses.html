@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fincode Institute | Programs & Courses</title>
+  <meta name="description" content="Explore our technical curriculums in quantitative finance, algorithmic trading, software engineering, and decentralized finance.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Glassmorphic Header -->
+  <header class="scrolled">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo" id="navLogo">
+          FINCODE<span class="logo-dot"></span>
+        </a>
+        
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link" id="homeLink">Home</a></li>
+          <li><a href="courses.html" class="nav-link active" id="coursesLink">Courses</a></li>
+          <li><a href="contact.html" class="nav-link" id="contactLink">Contact Us</a></li>
+          <li><a href="courses.html" class="nav-cta" id="ctaEnrollNav">Get Started</a></li>
+        </ul>
+        
+        <button class="hamburger" id="navToggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Courses Hero Header -->
+  <main style="padding-top: 120px;">
+    <section class="section-padding">
+      <div class="container">
+        
+        <div class="section-header reveal active" style="margin-bottom: 40px;">
+          <span class="section-subtitle">Technical Curriculums</span>
+          <h1 class="section-title">Our Professional Courses</h1>
+          <p class="section-desc">Choose from our list of high-caliber courses. Each curriculum incorporates hands-on scripting, live trading simulators, and project portfolios.</p>
+        </div>
+
+        <!-- Dynamic Filter Navigation -->
+        <div class="filter-container reveal active" id="courseFilters">
+          <button class="filter-btn active" data-filter="all">All Programs</button>
+          <button class="filter-btn" data-filter="trading">Trading & Strategy</button>
+          <button class="filter-btn" data-filter="programming">Software & Finance</button>
+          <button class="filter-btn" data-filter="blockchain">DeFi & Web3</button>
+        </div>
+
+        <!-- Courses Catalog Grid (6 Cards) -->
+        <div class="courses-grid">
+          
+          <!-- Course Card 1: Algorithmic Trading Systems -->
+          <div class="course-card reveal active" data-category="trading">
+            <div class="course-img-placeholder">
+              <span class="course-badge">Trading</span>
+              <svg class="course-img-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-cyan)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <div class="course-content">
+              <div class="course-meta">
+                <span class="course-meta-item">
+                  <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 6v6l4 2"/></svg>
+                  12 Weeks
+                </span>
+                <span class="course-meta-item">
+                  <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M8.5 10a4.5 4.5 0 100-9 4.5 4.5 0 000 9z"/></svg>
+                  Intermediate
+                </span>
+              </div>
+              <h3 class="course-title">Algorithmic Trading Systems</h3>
+              <p class="course-desc">Develop, backtest, and deploy high-frequency strategy scripts. Implement momentum, mean-reversion, and arbitrage bots using Python and exchange WebSocket APIs.</p>
+              <div class="course-footer">
+                <div class="course-rating">★ 4.9 <span style="color: var(--text-muted);">(120 reviews)</span></div>
+                <a href="contact.html" class="course-btn">Enroll ➔</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course Card 2: Quantitative Finance & Python -->
+          <div class="course-card reveal active" data-category="programming">
+            <div class="course-img-placeholder">
+              <span class="course-badge">Programming</span>
+              <svg class="course-img-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-purple)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div class="course-content">
+              <div class="course-meta">
+                <span class="course-meta-item">
+                  <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 6v6l4 2"/></svg>
+                  8 Weeks
+                </span>
+                <span class="course-meta-item">
+                  <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M8.5 10a4.5 4.5 0 100-9 4.5 4.5 0 000 9z"/></svg>
+                  Beginner Friendly
+                </span>
+              </div>
+              <h3 class="course-title">Quantitative Finance & Python</h3>
+              <p class="course-desc">Master the essential Python data stack (Pandas, NumPy, Matplotlib, Statsmodels). Perform statistical arbitrage, historical simulation, and portfolio optimization models.</p>
+              <div class="course-footer">
+                <div class="course-rating">★ 4.8 <span style="color: var(--text-muted);">(95 reviews)</span></div>
+                <a href="contact.html" class="course-btn">Enroll ➔</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course Card 3: Blockchain & Smart Contract Dev -->
+          <div class="course-card reveal active" data-category="blockchain">
+            <div class="course-img-placeholder">
+              <span class="course-badge">Blockchain</span>
+              <svg class="course-img-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-cyan)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="8" height="8" rx="2"></rect>
+                <rect x="14" y="2" width="8" height="8" rx="2"></rect>
+                <rect x="14" y="14" width="8" height="8" rx="2"></rect>
+                <rect x="2" y="14" width="8" height="8" rx="2"></rect>
+                <line x1="6" y1="10" x2="6" y2="14"></line>
+                <line x1="10" y1="6" x2="14" y2="6"></line>
+                <line x1="18" y1="10" x2="18" y2="14"></line>
+                <line x1="10" y1="18" x2="14" y2="18"></line>
+              </svg>
+            </div>
+            <div class="course-content">
+              <div class="course-meta">
+                <span class="course-meta-item">
+                  <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 6v6l4 2"/></svg>
+                  10 Weeks
+                </span>
+                <span class="course-meta-item">
+                  <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M8.5 10a4.5 4.5 0 100-9 4.5 4.5 0 000 9z"/></svg>
+                  Advanced
+                </span>
+              </div>
+              <h3 class="course-title">Blockchain & Smart Contracts</h3>
+              <p class="course-desc">Write production-ready Solidity code. Design custom ERC-20 tokens, AMMs (Automated Market Makers), decentralized lending protocols, and run deep security audit tests.</p>
+              <div class="course-footer">
+                <div class="course-rating">★ 4.9 <span style="color: var(--text-muted);">(88 reviews)</span></div>
+                <a href="contact.html" class="course-btn">Enroll ➔</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course Card 4: Machine Learning for Venture Capital -->
+          <div class="course-card reveal active" data-category="programming">
+            <div class="course-img-placeholder">
+              <span class="course-badge">Programming</span>
+              <svg class="course-img-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-purple)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <div class="course-content">
+              <div class="course-meta">
+                <span class="course-meta-item">
+                  <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 6v6l4 2"/></svg>
+                  10 Weeks
+                </span>
+                <span class="course-meta-item">
+                  <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M8.5 10a4.5 4.5 0 100-9 4.5 4.5 0 000 9z"/></svg>
+                  Intermediate
+                </span>
+              </div>
+              <h3 class="course-title">Machine Learning for Venture</h3>
+              <p class="course-desc">Build predictive pipelines using Scikit-Learn and TensorFlow. Classify and evaluate prospective target startups using web scraping, NLP sentiment tools, and alternative datasets.</p>
+              <div class="course-footer">
+                <div class="course-rating">★ 4.7 <span style="color: var(--text-muted);">(72 reviews)</span></div>
+                <a href="contact.html" class="course-btn">Enroll ➔</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course Card 5: Full-Stack Web3 Engineering -->
+          <div class="course-card reveal active" data-category="blockchain">
+            <div class="course-img-placeholder">
+              <span class="course-badge">Blockchain</span>
+              <svg class="course-img-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-cyan)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div class="course-content">
+              <div class="course-meta">
+                <span class="course-meta-item">
+                  <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 6v6l4 2"/></svg>
+                  16 Weeks
+                </span>
+                <span class="course-meta-item">
+                  <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M8.5 10a4.5 4.5 0 100-9 4.5 4.5 0 000 9z"/></svg>
+                  Advanced
+                </span>
+              </div>
+              <h3 class="course-title">Full-Stack Web3 Engineering</h3>
+              <p class="course-desc">Connect frontend applications to Ethereum smart contracts. Build sleek dApp dashboards, manage wallet authentication flows, and interact with smart contract nodes using Ethers.js.</p>
+              <div class="course-footer">
+                <div class="course-rating">★ 4.9 <span style="color: var(--text-muted);">(112 reviews)</span></div>
+                <a href="contact.html" class="course-btn">Enroll ➔</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course Card 6: Financial Risk Management & Data -->
+          <div class="course-card reveal active" data-category="trading">
+            <div class="course-img-placeholder">
+              <span class="course-badge">Trading</span>
+              <svg class="course-img-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-purple)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+            </div>
+            <div class="course-content">
+              <div class="course-meta">
+                <span class="course-meta-item">
+                  <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 6v6l4 2"/></svg>
+                  8 Weeks
+                </span>
+                <span class="course-meta-item">
+                  <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M8.5 10a4.5 4.5 0 100-9 4.5 4.5 0 000 9z"/></svg>
+                  Intermediate
+                </span>
+              </div>
+              <h3 class="course-title">Financial Risk & Data Science</h3>
+              <p class="course-desc">Understand volatility metrics, stress-testing paradigms, and portfolio risk ratios. Implement Monte Carlo scenarios, Value at Risk (VaR), and maximum drawdown models.</p>
+              <div class="course-footer">
+                <div class="course-rating">★ 4.8 <span style="color: var(--text-muted);">(63 reviews)</span></div>
+                <a href="contact.html" class="course-btn">Enroll ➔</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <!-- Modern Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            FINCODE<span class="logo-dot"></span>
+          </a>
+          <p>
+            An elite digital training ground building the next generation of quantitative engineers and technical finance leaders.
+          </p>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Institute</h4>
+          <ul>
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="courses.html" class="footer-link">Courses</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="courses.html" class="footer-link">Quantitative Trading</a></li>
+            <li><a href="courses.html" class="footer-link">Financial Programming</a></li>
+            <li><a href="courses.html" class="footer-link">Web3 & Cryptography</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Contact Info</h4>
+          <ul>
+            <li style="color: var(--text-secondary); font-size: 0.9rem;">
+              admissions@fincode.edu
+            </li>
+            <li style="color: var(--text-secondary); font-size: 0.9rem;">
+              +1 (800) 555-CODE
+            </li>
+            <li style="color: var(--text-secondary); font-size: 0.9rem;">
+              60 Wall Street, Suite 400<br>New York, NY 10005
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2026 Fincode Institute. All rights reserved. Built for EvoTech IT Intern Assignment.
+        </p>
+        <div class="footer-legal">
+          <a href="#" class="footer-legal-link">Privacy Policy</a>
+          <a href="#" class="footer-legal-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fincode Institute | Master Finance & Code</title>
+  <meta name="description" content="Learn quantitative finance, algorithmic trading, and web3 blockchain engineering. Premium hands-on courses at the intersection of programming and finance.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Glassmorphic Header -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo" id="navLogo">
+          FINCODE<span class="logo-dot"></span>
+        </a>
+        
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active" id="homeLink">Home</a></li>
+          <li><a href="courses.html" class="nav-link" id="coursesLink">Courses</a></li>
+          <li><a href="contact.html" class="nav-link" id="contactLink">Contact Us</a></li>
+          <li><a href="courses.html" class="nav-cta" id="ctaEnrollNav">Get Started</a></li>
+        </ul>
+        
+        <button class="hamburger" id="navToggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content reveal active">
+            <div class="badge">
+              <span class="badge-dot"></span>
+              <span>Next cohort starts August 1st</span>
+            </div>
+            <h1 class="hero-title" id="heroHeadline">
+              Master the Intersection of <span>Finance & Code</span>
+            </h1>
+            <p class="hero-desc">
+              Build algorithmic trading bots, analyze massive financial datasets, and develop secure Web3 smart contracts. Learn from veteran quantitative developers and software engineers.
+            </p>
+            <div class="hero-btns">
+              <a href="courses.html" class="btn btn-primary" id="heroExploreBtn">Explore Courses</a>
+              <a href="contact.html" class="btn btn-secondary" id="heroContactBtn">Talk to an Advisor</a>
+            </div>
+          </div>
+          
+          <div class="hero-visual reveal active">
+            <!-- Floating Code Sandbox Visual -->
+            <div class="visual-canvas">
+              <div class="canvas-glow"></div>
+              <div class="code-header">
+                <span class="code-dot"></span>
+                <span class="code-dot"></span>
+                <span class="code-dot"></span>
+              </div>
+              <div class="code-body">
+                <div class="code-line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</div>
+                <div class="code-line"><span class="keyword">from</span> fincode.trading <span class="keyword">import</span> Strategy</div>
+                <div class="code-line">&nbsp;</div>
+                <div class="code-line"><span class="keyword">class</span> <span class="function">AlgorithmicExecution</span>(Strategy):</div>
+                <div class="code-line indent"><span class="keyword">def</span> <span class="function">on_bar</span>(self, data):</div>
+                <div class="code-line indent-2">short_ma = data[<span class="string">'close'</span>].rolling(<span class="variable">10</span>).mean()</div>
+                <div class="code-line indent-2">long_ma = data[<span class="string">'close'</span>].rolling(<span class="variable">50</span>).mean()</div>
+                <div class="code-line indent-2">&nbsp;</div>
+                <div class="code-line indent-2"><span class="keyword">if</span> short_ma &gt; long_ma:</div>
+                <div class="code-line indent-2">&nbsp;&nbsp;&nbsp;&nbsp;self.<span class="function">buy</span>(size=<span class="variable">100</span>)</div>
+                <div class="code-line indent-2"><span class="keyword">elif</span> short_ma &lt; long_ma:</div>
+                <div class="code-line indent-2">&nbsp;&nbsp;&nbsp;&nbsp;self.<span class="function">sell</span>(size=<span class="variable">100</span>)</div>
+              </div>
+            </div>
+            
+            <!-- Floating Mini Chart Visual -->
+            <div class="chart-card">
+              <div class="chart-header">
+                <span class="chart-title">ALGO EXECUTION</span>
+                <span class="chart-val">+14.2%</span>
+              </div>
+              <svg class="chart-svg" viewBox="0 0 100 30">
+                <defs>
+                  <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="var(--color-cyan)" stop-opacity="0.4"></stop>
+                    <stop offset="100%" stop-color="var(--color-cyan)" stop-opacity="0"></stop>
+                  </linearGradient>
+                </defs>
+                <path d="M 0,25 C 10,20 15,22 25,12 C 35,2 45,18 55,8 C 65,-2 75,5 85,2 C 90,0 95,5 100,2 L 100,30 L 0,30 Z" fill="url(#chartGrad)"></path>
+                <path d="M 0,25 C 10,20 15,22 25,12 C 35,2 45,18 55,8 C 65,-2 75,5 85,2 C 90,0 95,5 100,2" fill="none" stroke="var(--color-cyan)" stroke-width="1.5"></path>
+                <circle cx="100" cy="2" r="2" fill="var(--color-cyan)"></circle>
+              </svg>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+      <div class="container">
+        <div class="about-grid">
+          
+          <div class="about-media reveal">
+            <div class="about-card">
+              <div class="about-card-glow"></div>
+              <h3>Engineered for the Future of Finance</h3>
+              <p>
+                Standard computer science degrees miss the financial logic. Business degrees miss the algorithm architecture. At Fincode Institute, we construct the bridge.
+              </p>
+              <div class="about-stats">
+                <div class="stat-item">
+                  <span class="stat-num">5k+</span>
+                  <span class="stat-label">Alumni Placed</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-num">94%</span>
+                  <span class="stat-label">Employment Rate</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-num">50M+</span>
+                  <span class="stat-label">Volume Traded</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-num">1-on-1</span>
+                  <span class="stat-label">Mentor Support</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-content reveal">
+            <span class="section-subtitle">Who We Are</span>
+            <h2 class="section-title" id="aboutHeading">Bridging Technology & Trading Floors</h2>
+            <p>
+              Fincode Institute was established in 2021 to meet the extreme demand for quantitative talents. Traditional training lacks coding intensity, and bootcamps ignore complex market dynamics. 
+            </p>
+            <p>
+              Our programs are rigorous, hands-on, and developed alongside quantitative hedge funds and major DeFi builders. You don't just solve textbook algorithms; you construct live deployment pipelines.
+            </p>
+            <ul class="bullet-list">
+              <li class="bullet-item">
+                <span class="bullet-icon">✦</span>
+                <span>Instructors are active senior quant developers & tech leads.</span>
+              </li>
+              <li class="bullet-item">
+                <span class="bullet-icon">✦</span>
+                <span>Learn with standard modern toolkits (Python, Rust, Solidity).</span>
+              </li>
+              <li class="bullet-item">
+                <span class="bullet-icon">✦</span>
+                <span>Receive lifelong access to our elite hiring network.</span>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Courses Section -->
+    <section class="courses-preview section-padding">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-subtitle">Our Curriculums</span>
+          <h2 class="section-title">Specialized Programs</h2>
+          <p class="section-desc">Handcrafted pathways designed to take you from a curious coder to a highly competitive technical specialist.</p>
+        </div>
+
+        <div class="courses-grid">
+          
+          <!-- Course Card 1 -->
+          <div class="course-card reveal" data-category="trading">
+            <div class="course-img-placeholder">
+              <span class="course-badge">Trading</span>
+              <svg class="course-img-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-cyan)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <div class="course-content">
+              <div class="course-meta">
+                <span class="course-meta-item">
+                  <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 6v6l4 2"/></svg>
+                  12 Weeks
+                </span>
+                <span class="course-meta-item">
+                  <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M8.5 10a4.5 4.5 0 100-9 4.5 4.5 0 000 9z"/></svg>
+                  Intermediate
+                </span>
+              </div>
+              <h3 class="course-title">Algorithmic Trading Systems</h3>
+              <p class="course-desc">Develop, backtest, and deploy high-frequency quantitative strategy scripts using Python and raw exchange APIs.</p>
+              <div class="course-footer">
+                <div class="course-rating">★ 4.9 <span style="color: var(--text-muted);">(120 reviews)</span></div>
+                <a href="courses.html" class="course-btn">Learn More ➔</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course Card 2 -->
+          <div class="course-card reveal" data-category="programming">
+            <div class="course-img-placeholder">
+              <span class="course-badge">Programming</span>
+              <svg class="course-img-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-purple)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div class="course-content">
+              <div class="course-meta">
+                <span class="course-meta-item">
+                  <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 6v6l4 2"/></svg>
+                  8 Weeks
+                </span>
+                <span class="course-meta-item">
+                  <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M8.5 10a4.5 4.5 0 100-9 4.5 4.5 0 000 9z"/></svg>
+                  Beginner Friendly
+                </span>
+              </div>
+              <h3 class="course-title">Quantitative Finance & Python</h3>
+              <p class="course-desc">Master Pandas, NumPy, and Statsmodels to perform statistical arbitrage and build modern financial models.</p>
+              <div class="course-footer">
+                <div class="course-rating">★ 4.8 <span style="color: var(--text-muted);">(95 reviews)</span></div>
+                <a href="courses.html" class="course-btn">Learn More ➔</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course Card 3 -->
+          <div class="course-card reveal" data-category="blockchain">
+            <div class="course-img-placeholder">
+              <span class="course-badge">Blockchain</span>
+              <svg class="course-img-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-cyan)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="8" height="8" rx="2"></rect>
+                <rect x="14" y="2" width="8" height="8" rx="2"></rect>
+                <rect x="14" y="14" width="8" height="8" rx="2"></rect>
+                <rect x="2" y="14" width="8" height="8" rx="2"></rect>
+                <line x1="6" y1="10" x2="6" y2="14"></line>
+                <line x1="10" y1="6" x2="14" y2="6"></line>
+                <line x1="18" y1="10" x2="18" y2="14"></line>
+                <line x1="10" y1="18" x2="14" y2="18"></line>
+              </svg>
+            </div>
+            <div class="course-content">
+              <div class="course-meta">
+                <span class="course-meta-item">
+                  <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 6v6l4 2"/></svg>
+                  10 Weeks
+                </span>
+                <span class="course-meta-item">
+                  <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M8.5 10a4.5 4.5 0 100-9 4.5 4.5 0 000 9z"/></svg>
+                  Advanced
+                </span>
+              </div>
+              <h3 class="course-title">Blockchain & Smart Contracts</h3>
+              <p class="course-desc">Write bulletproof Solidity code, design secure decentralized lending systems, and audit complex smart contracts.</p>
+              <div class="course-footer">
+                <div class="course-rating">★ 4.9 <span style="color: var(--text-muted);">(88 reviews)</span></div>
+                <a href="courses.html" class="course-btn">Learn More ➔</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;" class="reveal">
+          <a href="courses.html" class="btn btn-secondary" id="viewAllCoursesBtn">View All 6 Courses</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Modern Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            FINCODE<span class="logo-dot"></span>
+          </a>
+          <p>
+            An elite digital training ground building the next generation of quantitative engineers and technical finance leaders.
+          </p>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Institute</h4>
+          <ul>
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="courses.html" class="footer-link">Courses</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="courses.html" class="footer-link">Quantitative Trading</a></li>
+            <li><a href="courses.html" class="footer-link">Financial Programming</a></li>
+            <li><a href="courses.html" class="footer-link">Web3 & Cryptography</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Contact Info</h4>
+          <ul>
+            <li style="color: var(--text-secondary); font-size: 0.9rem;">
+              admissions@fincode.edu
+            </li>
+            <li style="color: var(--text-secondary); font-size: 0.9rem;">
+              +1 (800) 555-CODE
+            </li>
+            <li style="color: var(--text-secondary); font-size: 0.9rem;">
+              60 Wall Street, Suite 400<br>New York, NY 10005
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2026 Fincode Institute. All rights reserved. Built for EvoTech IT Intern Assignment.
+        </p>
+        <div class="footer-legal">
+          <a href="#" class="footer-legal-link">Privacy Policy</a>
+          <a href="#" class="footer-legal-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
